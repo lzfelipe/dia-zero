@@ -6,7 +6,7 @@ export default function Home() {
     <div className="container section d-flex justify-content-center align-items-center text-center">
         <div className="">
           <h1 className="text-orange main-title">BEM VINDO AO</h1>
-          <h1 className="main-title">DIA ZERO</h1>
+          <h1 className="main-title-name">DIA ZERO</h1>
           <h1 className="text-orange main-title">00.00.00</h1>
         </div>
     </div>
@@ -29,7 +29,7 @@ export default function Home() {
           </p>
         </div>
     </div>
-    <Video title="VIDEO 1"/>
+    <Video title="PILOTO"/>
     <Video title="VIDEO 2"/>
     <Video title="VIDEO 3"/>
     <div className="container section d-flex flex-wrap justify-content-center align-items-around text-center mt-5">
@@ -43,9 +43,9 @@ export default function Home() {
         </div>
 
         <div className="col-12 d-flex justify-content-between">
-        <h1 className="choices-text">SIMM<span className="text-orange">!</span></h1>
-        <h1 className="choices-text">AH VEJO, JÁ TO AQUI<span className="text-orange">...</span></h1>
-        <h1 className="choices-text">NÃO, VALEU<span className="text-orange">.</span></h1>
+          <h1 className="choices-text">SIMM<span className="text-orange">!</span></h1>
+          <h1 className="choices-text">AH VEJO, JÁ TO AQUI<span className="text-orange">...</span></h1>
+          <h1 className="choices-text">NÃO, VALEU<span className="text-orange">.</span></h1>
         </div>
     
     </div>
