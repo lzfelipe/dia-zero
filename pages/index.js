@@ -91,8 +91,16 @@ export default function Home() {
           <a href="#rascunhos">
             <h1 className="choices-text text-center">RASCUNHOS</h1>
           </a>
-          <h1 className="choices-text text-center">INTEGRANTES</h1>
-          <h1 className="choices-text text-center">MONOGRAFIA</h1>
+          <a href="#integrantes">
+            <h1 className="choices-text text-center">INTEGRANTES</h1>
+          </a>
+          <a
+            href="https://docs.google.com/document/d/1XqEPoOnPYqJdhLekd_7WRXYl2Qn6fp6b/edit?usp=sharing&ouid=101128919413065920640&rtpof=true&sd=true"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h1 className="choices-text text-center">MONOGRAFIA</h1>
+          </a>
         </div>
         <div className="col-12 d-flex justify-content-between">
           <a
@@ -109,7 +117,13 @@ export default function Home() {
           >
             <h1 className="choices-text text-center">RECICLE</h1>
           </a>
-          <h1 className="choices-text text-center">DESIGN KIT</h1>
+          <a
+            href="https://drive.google.com/file/d/1QlUZqBFEJVNEd_b_AlmxAuQGXOIWXzWn/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h1 className="choices-text text-center">DESIGN KIT</h1>
+          </a>
         </div>
       </div>
 
@@ -187,6 +201,62 @@ export default function Home() {
               className="img-fluid img-rascunho"
               src="images/rascunhos/8.png"
             />
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="container section py-4"
+        id="integrantes"
+        style={{ overflowY: "hidden" }}
+      >
+        <div className="row mb-3 align-items-center justify-content-around">
+          <div className="col-6 col-md-11">
+            <h1 className="main-title">INTEGRANTES</h1>
+          </div>
+
+          <div className="col-6 col-md-1 d-flex justify-content-end">
+            <a href="#choices-2">
+              <img src="images/back.png" className="float-right" />
+            </a>
+          </div>
+        </div>
+
+        <div className="row mb-3">
+          <div className="col-12 col-md-4 mb-4 text-center">
+            <img
+              className="img-fluid img-fotos"
+              src="images/integrantes/bruno.png"
+            />
+            <h1 className="mt-3">Bruno</h1>
+          </div>
+          <div className="col-12 col-md-4 mb-4 text-center">
+            <img
+              className="img-fluid img-fotos"
+              src="images/integrantes/akio.png"
+            />
+            <h1 className="mt-3">Gabriel</h1>
+          </div>
+          <div className="col-12 col-md-4 mb-4 text-center">
+            <img
+              className="img-fluid img-fotos"
+              src="images/integrantes/luiz.png"
+            />
+            <h1 className="mt-3">Luiz</h1>
+          </div>
+          <div className="col-12 col-md-4 mb-4 mb-md-0 text-center">
+            <img
+              className="img-fluid img-fotos"
+              src="images/integrantes/rafaela.png"
+            />
+            <h1 className="mt-3">Rafaela</h1>
+          </div>
+          <div className="col-12 col-md-4 mb-4 mb-md-0 text-center">
+            <img
+              className="img-fluid img-fotos"
+              src="images/integrantes/victor.png"
+            />
+            <h1 className="mt-3">Vitor</h1>
           </div>
         </div>
       </div>
