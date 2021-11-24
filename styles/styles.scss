@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 @font-face {
-    font-family: "Entrusco";
-    src: url("/fonts/entrusco.ttf");
-    font-weight: 400;
-
-  }
+  font-family: "Entrusco";
+  src: url("/fonts/entrusco.ttf");
+  font-weight: 400;
+}
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
-
 
 * {
   font-family: "Poppins", sans-serif !important;
@@ -28,67 +26,76 @@ a {
 }
 
 .bg-black {
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
   color: #fff;
 }
 
 .text-orange {
-    color: #DF4C1B;
+  color: #df4c1b;
 }
 
 .section {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .main-title {
-    font-weight: 800;
-    font-size: 80px;
-    font-family: 'Entrusco' !important;
-    letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 80px;
+  font-family: "Entrusco" !important;
+  letter-spacing: 5px;
 }
-
 
 .main-title-name {
-    font-weight: 800;
-    font-size: 120px;
-    font-family: 'Entrusco' !important;
-    letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 120px;
+  font-family: "Entrusco" !important;
+  letter-spacing: 5px;
 }
 
-.main-text{
-    margin-top: 10vh;
-    font-size: 20px;
+.main-text {
+  margin-top: 10vh;
+  font-size: 20px;
 }
 
 .btn-video {
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #DF4C1B;
-    padding: 5px 10px;
-    border-radius: 0px;
-    font-size: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #df4c1b;
+  padding: 5px 10px;
+  border-radius: 0px;
+  font-size: 1.5em;
 
-    &:hover {
-        color: #DF4C1B;
-        background-color: #fff;
-    }
+  &:hover {
+    color: #df4c1b;
+    background-color: #fff;
+  }
 }
 
-
 .secondary-title {
-    font-weight: 800;
-    font-size: 40px;
+  font-weight: 800;
+  font-size: 40px;
 }
 
 .choices-text {
-    font-weight: 800;
-    font-size: 30px;
+  font-weight: 800;
+  font-size: 30px;
 
-    &:hover {
-        color: #DF4C1B;
-        cursor: pointer;
-        .choices-text, span {
-            color: #fff
-        }
+  &:hover {
+    color: #df4c1b;
+    cursor: pointer;
+    .choices-text,
+    span {
+      color: #fff;
     }
+  }
+}
+
+.img-rascunho {
+  height: 300px;
+  width: 500px;
+
+  //   &:hover {
+  //     transform: scale(1.2);
+  //     transition: 500ms;
+  //   }
 }
