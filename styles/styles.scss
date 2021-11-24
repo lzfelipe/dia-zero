@@ -20,6 +20,11 @@
 a {
   color: inherit;
   text-decoration: none !important;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none !important;
+  }
 }
 
 .bg-black {
@@ -78,4 +83,12 @@ a {
 .choices-text {
     font-weight: 800;
     font-size: 30px;
+
+    &:hover {
+        color: #DF4C1B;
+        cursor: pointer;
+        .choices-text, span {
+            color: #fff
+        }
+    }
 }
