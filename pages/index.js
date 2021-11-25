@@ -132,13 +132,13 @@ export default function Home() {
       </div>
 
       <div
-        className="container section"
+        className="container section mt-4"
         id="rascunhos"
         style={{ overflowY: "hidden" }}
       >
         <div className="row mb-3 align-items-center justify-content-around">
           <div className="col-6 col-md-11">
-            <h1 className="main-title">RASCUNHOS</h1>
+            <h1 className="main-title title-section">RASCUNHOS</h1>
           </div>
 
           <div className="col-6 col-md-1 d-flex justify-content-end">
@@ -210,13 +210,13 @@ export default function Home() {
       </div>
 
       <div
-        className="container section py-4"
+        className="container section py-4 mt-4"
         id="integrantes"
         style={{ overflowY: "hidden" }}
       >
         <div className="row mb-3 align-items-center justify-content-around">
           <div className="col-6 col-md-11">
-            <h1 className="main-title">INTEGRANTES</h1>
+            <h1 className="main-title title-section">INTEGRANTES</h1>
           </div>
 
           <div className="col-6 col-md-1 d-flex justify-content-end">
