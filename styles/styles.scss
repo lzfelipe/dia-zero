@@ -109,3 +109,17 @@ a {
   //     transition: 500ms;
   //   }
 }
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 60px;
+  }
+
+  .main-title-name {
+    font-size: 80px;
+  }
+
+  .secondary-title {
+    font-size: 25px;
+  }
+}
