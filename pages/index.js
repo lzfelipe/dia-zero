@@ -18,7 +18,9 @@ export default function Home() {
       </div>
       <div className="container section d-flex justify-content-center align-items-center text-center">
         <div className="">
-          <h1 className="main-title">DIA ZERO</h1>
+          <h1 className="main-title" style={{ fontSize: 120 }}>
+            DIA ZERO
+          </h1>
           <h1 className="text-orange main-title">00.00.00</h1>
           <p className="main-text">
             É um trabalho de conclusão de curso do curso design digital da
