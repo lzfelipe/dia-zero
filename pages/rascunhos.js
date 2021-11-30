@@ -4,13 +4,13 @@ import Link from "next/link";
 const Rascunhos = () => {
   return (
     <div className="container section py-5 pages-container" id="rascunhos">
-      <div className="row mb-3 align-items-center justify-content-around">
+      <div className="row mb-3 align-items-center justify-content-center w-100">
         <div className="col-6 col-md-11">
           <h1 className="main-title title-section">RASCUNHOS</h1>
         </div>
 
         <div className="col-6 col-md-1 d-flex justify-content-end">
-          <Link href="/#choices-2">
+          <Link href="/choices#choices-2">
             <a href="">
               <img src="images/back.png" className="float-right" />
             </a>
@@ -18,7 +18,7 @@ const Rascunhos = () => {
         </div>
       </div>
 
-      <div className="row mb-3">
+      <div className="row align-items-center justify-content-center mb-3 ">
         <div className="col-12 col-md-6 mb-4 mb-md-0">
           <img
             className="img-fluid img-rascunho"

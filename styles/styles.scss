@@ -186,6 +186,10 @@ a {
   background-color: #df4c1b;
 }
 
+.mobile-scroll {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   .main-title {
     font-size: 60px;
@@ -217,7 +221,19 @@ a {
     text-align: justify !important;
   }
 
-  .videos-container {
-    height: 45rem;
+  .dots-container {
+    display: none;
   }
+
+  .dot {
+    display: none;
+  }
+
+  .mobile-scroll {
+    display: flex !important;
+  }
+
+  // .videos-container {
+  //   height: 45rem;
+  // }
 }

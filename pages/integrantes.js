@@ -10,7 +10,7 @@ const Integrantes = () => {
         </div>
 
         <div className="col-6 col-md-1 d-flex justify-content-end">
-          <Link href="/#choices-2">
+          <Link href="/choices#choices-2">
             <a href="#choices-2">
               <img src="images/back.png" className="float-right" />
             </a>
