@@ -10,6 +10,34 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+body {
+  overflow: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.videos-container {
+  overflow: scroll !important;
+  height: 100vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.pages-container {
+  overflow: scroll !important;
+  height: 100vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.videos-container::-webkit-scrollbar {
+  display: none;
+}
+
+.pages-container::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   font-family: "Poppins", sans-serif !important;
   scroll-behavior: smooth;
@@ -26,7 +54,7 @@ a {
 }
 
 .bg-black {
-  background-color: #1c1c1c;
+  background-color: #121212 !important;
   color: #fff;
 }
 
@@ -45,6 +73,20 @@ a {
   letter-spacing: 5px;
 }
 
+.sub-title-intro {
+  font-weight: 800;
+  font-size: 60px;
+  font-family: "Entrusco" !important;
+  letter-spacing: 5px;
+}
+
+.title-introducao {
+  font-weight: 800;
+  font-size: 120px;
+  font-family: "Entrusco" !important;
+  letter-spacing: 5px;
+}
+
 .main-title-name {
   font-weight: 900;
   font-size: 200px;
@@ -54,7 +96,14 @@ a {
 
 .main-text {
   margin-top: 10vh;
-  font-size: 20px;
+  font-size: 1.3rem;
+}
+
+.videos-text {
+  font-weight: 800;
+  font-size: 60px;
+  font-family: "Entrusco" !important;
+  letter-spacing: 3px;
 }
 
 .btn-video {
@@ -110,6 +159,33 @@ a {
   //   }
 }
 
+.dots-container {
+  position: fixed;
+  top: 40%;
+  right: 0px;
+  padding: 20px;
+  width: fit-content;
+}
+
+.dot {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+
+  &:hover {
+    background-color: #df4c1b;
+    cursor: pointer;
+  }
+}
+
+.dot-active {
+  background-color: #df4c1b;
+}
+
 @media (max-width: 768px) {
   .main-title {
     font-size: 60px;
@@ -125,5 +201,23 @@ a {
 
   .title-section {
     font-size: 2rem !important;
+  }
+
+  .sub-title-intro {
+    font-size: 40px;
+  }
+
+  .title-introducao {
+    font-size: 80px;
+  }
+
+  .main-text {
+    margin-top: 5vh;
+    font-size: 20px;
+    text-align: justify !important;
+  }
+
+  .videos-container {
+    height: 45rem;
   }
 }

@@ -1,10 +1,13 @@
 import Video from "../components/Video";
+import Link from "next/link";
+import Dots from "../components/Dots";
 
 export default function Home() {
   return (
     <div className="bg-black">
+      <Dots />
       <div
-        className="container section d-flex justify-content-center align-items-center text-center"
+        className="container section d-flex justify-content-center align-items-center text-center pages-container "
         id="inicio"
       >
         <div className="">
@@ -13,15 +16,19 @@ export default function Home() {
           <h1 className="text-orange main-title">00.00.00</h1>
         </div>
       </div>
-      <div className="container section d-flex justify-content-center align-items-center text-center">
+      <div
+        className="container section d-flex justify-content-center align-items-center text-center pages-container "
+        id="simbol"
+      >
         <img src="images/logo.png" />
       </div>
-      <div className="container section d-flex justify-content-center align-items-center text-center">
-        <div className="">
-          <h1 className="main-title" style={{ fontSize: 120 }}>
-            DIA ZERO
-          </h1>
-          <h1 className="text-orange main-title">00.00.00</h1>
+      <div
+        className="container section d-flex justify-content-center align-items-center text-center pages-container py-5"
+        id="intro"
+      >
+        <div className="mt-5 mt-md-0">
+          <h1 className="title-introducao">DIA ZERO</h1>
+          <h1 className="text-orange sub-title-intro">00.00.00</h1>
           <p className="main-text">
             É um trabalho de conclusão de curso do curso design digital da
             anhembi morumbi.
@@ -36,11 +43,13 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <Video title="PILOTO" />
-      <Video title="VIDEO 2" />
-      <Video title="VIDEO 3" />
+      <div className="videos-container">
+        <Video title="PILOTO" />
+        <Video title="VIDEO 2" />
+        <Video title="VIDEO 3" />
+      </div>
       <div
-        className="container section d-flex flex-wrap justify-content-center align-items-around text-center mt-5"
+        className="container section d-flex flex-wrap justify-content-center align-items-around text-center mt-5 pages-container py-5"
         id="choices-1"
       >
         <div className="col-12">
@@ -74,7 +83,7 @@ export default function Home() {
       </div>
 
       <div
-        className="container section d-flex flex-wrap justify-content-center align-items-around text-center mt-5"
+        className="container section d-flex flex-wrap justify-content-center align-items-around text-center mt-5 pages-container py-5"
         id="choices-2"
         style={{ overflowY: "hidden" }}
       >
@@ -90,12 +99,16 @@ export default function Home() {
         </div>
 
         <div className="col-12 row justify-content-between pt-4">
-          <a href="#rascunhos" className="col-12 col-md-4">
-            <h1 className="choices-text text-center">RASCUNHOS</h1>
-          </a>
-          <a href="#integrantes" className="col-12 col-md-4">
-            <h1 className="choices-text text-center">INTEGRANTES</h1>
-          </a>
+          <Link href="/rascunhos">
+            <a className="col-12 col-md-4">
+              <h1 className="choices-text text-center">RASCUNHOS</h1>
+            </a>
+          </Link>
+          <Link href="/integrantes">
+            <a className="col-12 col-md-4">
+              <h1 className="choices-text text-center">INTEGRANTES</h1>
+            </a>
+          </Link>
           <a
             href="https://docs.google.com/document/d/1XqEPoOnPYqJdhLekd_7WRXYl2Qn6fp6b/edit?usp=sharing&ouid=101128919413065920640&rtpof=true&sd=true"
             target="_blank"
@@ -130,140 +143,6 @@ export default function Home() {
           >
             <h1 className="choices-text text-center">DESIGN KIT</h1>
           </a>
-        </div>
-      </div>
-
-      <div
-        className="container section mt-4"
-        id="rascunhos"
-        style={{ overflowY: "hidden" }}
-      >
-        <div className="row mb-3 align-items-center justify-content-around">
-          <div className="col-6 col-md-11">
-            <h1 className="main-title title-section">RASCUNHOS</h1>
-          </div>
-
-          <div className="col-6 col-md-1 d-flex justify-content-end">
-            <a href="#choices-2">
-              <img src="images/back.png" className="float-right" />
-            </a>
-          </div>
-        </div>
-
-        <div className="row mb-3">
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
-            <img
-              className="img-fluid img-rascunho"
-              src="images/rascunhos/1.png"
-            />
-          </div>
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
-            <img
-              className="img-fluid img-rascunho"
-              src="images/rascunhos/2.png"
-            />
-          </div>
-        </div>
-
-        <div className="row mb-3">
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
-            <img
-              className="img-fluid img-rascunho"
-              src="images/rascunhos/3.png"
-            />
-          </div>
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
-            <img
-              className="img-fluid img-rascunho"
-              src="images/rascunhos/4.png"
-            />
-          </div>
-        </div>
-
-        <div className="row mb-3">
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
-            <img
-              className="img-fluid img-rascunho"
-              src="images/rascunhos/5.png"
-            />
-          </div>
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
-            <img
-              className="img-fluid img-rascunho"
-              src="images/rascunhos/6.png"
-            />
-          </div>
-        </div>
-
-        <div className="row pb-4">
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
-            <img
-              className="img-fluid img-rascunho"
-              src="images/rascunhos/7.png"
-            />
-          </div>
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
-            <img
-              className="img-fluid img-rascunho"
-              src="images/rascunhos/8.png"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div
-        className="container section py-4 mt-4"
-        id="integrantes"
-        style={{ overflowY: "hidden" }}
-      >
-        <div className="row mb-3 align-items-center justify-content-around">
-          <div className="col-6 col-md-11">
-            <h1 className="main-title title-section">INTEGRANTES</h1>
-          </div>
-
-          <div className="col-6 col-md-1 d-flex justify-content-end">
-            <a href="#choices-2">
-              <img src="images/back.png" className="float-right" />
-            </a>
-          </div>
-        </div>
-
-        <div className="row mb-3">
-          <div className="col-12 col-md-4 mb-4 text-center">
-            <img
-              className="img-fluid img-fotos"
-              src="images/integrantes/bruno.png"
-            />
-            <h1 className="mt-3">Bruno</h1>
-          </div>
-          <div className="col-12 col-md-4 mb-4 text-center">
-            <img
-              className="img-fluid img-fotos"
-              src="images/integrantes/akio.png"
-            />
-            <h1 className="mt-3">Gabriel</h1>
-          </div>
-          <div className="col-12 col-md-4 mb-4 text-center">
-            <img
-              className="img-fluid img-fotos"
-              src="images/integrantes/luiz.png"
-            />
-            <h1 className="mt-3">Luiz</h1>
-          </div>
-          <div className="col-12 col-md-4 mb-4 mb-md-0 text-center">
-            <img
-              className="img-fluid img-fotos"
-              src="images/integrantes/rafaela.png"
-            />
-            <h1 className="mt-3">Rafaela</h1>
-          </div>
-          <div className="col-12 col-md-4 mb-4 mb-md-0 text-center">
-            <img
-              className="img-fluid img-fotos"
-              src="images/integrantes/victor.png"
-            />
-            <h1 className="mt-3">Vitor</h1>
-          </div>
         </div>
       </div>
     </div>
