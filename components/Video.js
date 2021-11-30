@@ -9,7 +9,7 @@ export default function Video(props) {
         {props.title == "PILOTO" ? (
           <iframe
             src="https://www.youtube.com/embed/gVuF0tziRZQ"
-            style={{ width: "60vw", height: "30vw" }}
+            className="iframe-video"
           />
         ) : (
           <h1 className="videos-text text-orange">EM BREVE</h1>
